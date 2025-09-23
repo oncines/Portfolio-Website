@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <h1 class="navbar-brand">JanDev</h1>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>I'm Programmer & <br> Ux Designer</h1>
+                <p>I am a web developer passionate about creating beautiful websites.</p>
+                <button class="btn-primary">Hire Me</button>
+            </div>
+            <div class="hero-img">
+                <img src="./img/profile.jpg" alt="Web Developer at Work" />
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="about-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-body">
+            <img src="./img/profile.jpg" alt="Profile picture"><br>
+            <div class="about-content">
+                <h2>Who Am I</h2>
+                <p>
+                    I’m a web developer who loves turning ideas into clean, modern, and responsive websites.
+                    My focus is on creating smooth user experiences with efficient and scalable code.
+                </p><br>
+                <p>
+                    Always curious and eager to learn, I enjoy exploring new technologies
+                    and finding creative solutions to challenges.
+                </p>
+            </div>
+
+            <div class="about-highlights">
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <p><strong>Education:</strong> B.S. Information Technolory, St John Paul II College Of Davao</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <p><strong>Expertise:</strong> Backend Development & UX, cloud Designer</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <p><strong>Passion:</strong> Clean code and future-ready solutions
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="./img/project1.jpg" alt="Project 1" />
+                <h3>Rocket paper Scissor</h3>
+                <p>a simple Game</p>
+            </div>
+            <div class="card">
+                <img src="./img/project2.jpg" alt="Project 2" />
+                <h3>Page Replacement Algo Calc</h3>
+                <p>Is a type of Calculator that can visualize a table of page Replacement Algorithm</p>
+            </div>
+            <div class="card">
+                <img src="./img/project3.png" alt="Project 3" />
+                <h3>Android Calculator</h3>
+                <p>A simple Andoid basic Calculator </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send</button>
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> My Portfolio. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
